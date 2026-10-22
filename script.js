@@ -7,7 +7,7 @@ const stopBtn = document.getElementById('stop-btn');
 let timer; 
 //*change color function
 function changeColor(color){
-    container.style.backgroundColor = color;
+    document.body.style.backgroundColor = color;
     colorDisplay.textContent = "Current Color: " + color;
 }
 
@@ -22,7 +22,7 @@ colorButtons[2].addEventListener("click", function() {
     changeColor('Green')
 })
 
-//*mouseover and mouseout
+//*mousover and mouseout
 colorButtons[0].addEventListener("mouseover", function() {
     colorButtons[0].style.opacity = '0.5';
 })
