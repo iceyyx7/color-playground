@@ -43,4 +43,21 @@ colorButtons[2].addEventListener("mouseover", function() {
 colorButtons[2].addEventListener("mouseout", function() {
     colorButtons[2].style.opacity = '1';
 })
+//*start color cycle 
+startBtn.addEventListener('click', function() {
+    clearInterval(timer);
+
+    timer = setInterval(function() {
+        if (document.body.style.backgroundColor == 'red'){
+            changeColor('Blue');
+        }
+        else if (document.body.style.backgroundColor == 'blue'){
+            changeColor('Green');
+        }
+        else {
+            changeColor('Red')
+        }
+    })
+})
+
 
