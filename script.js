@@ -60,4 +60,7 @@ startBtn.addEventListener('click', function() {
     })
 })
 
-
+//*stop color cycle
+stopBtn.addEventListener('click', function() {
+    clearInterval(timer);
+})
